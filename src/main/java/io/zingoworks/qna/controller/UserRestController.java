@@ -1,5 +1,6 @@
 package io.zingoworks.qna.controller;
 
+import io.swagger.annotations.Api;
 import io.zingoworks.qna.model.User;
 import io.zingoworks.qna.model.api.request.JoinRequest;
 import io.zingoworks.qna.model.api.response.ApiResult;
@@ -9,6 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("api/users")
+@Api("User Api")
 public class UserRestController {
 
     @GetMapping("{userId}")
